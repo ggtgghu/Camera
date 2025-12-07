@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0">
+    <title>Camera App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📸 Camera App</h1>
+        
+        <div class="button-group">
+            <button id="takePhoto" class="btn primary">Take Photo</button>
+            <button id="pickFromGallery" class="btn secondary">Pick from Gallery</button>
+            <button id="checkPermissions" class="btn info">Check Permissions</button>
+        </div>
+        
+        <div id="imageContainer">
+            <img id="capturedImage" src="" alt="Captured Image">
+        </div>
+        
+        <div class="info-section">
+            <h3>Camera Options</h3>
+            <div class="options">
+                <label>
+                    <input type="radio" name="quality" value="100" checked> High Quality
+                </label>
+                <label>
+                    <input type="radio" name="quality" value="50"> Medium Quality
+                </label>
+                <label>
+                    <input type="radio" name="quality" value="20"> Low Quality
+                </label>
+            </div>
+        </div>
+        
+        <div class="permission-status">
+            <p id="permissionText">Permissions: Not checked</p>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
