@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "npx cap sync",
+    "android": "npx cap open android",
+    "build": "npx cap sync",
+    "sync": "npx cap sync"
+  }
+}
